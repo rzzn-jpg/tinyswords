@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://6m8kyfd6h6oq"]
+
+[ext_resource type="Texture2D" uid="uid://iuiuhp6rlgkm" path="res://assets/Terrain/Decorations/Rocks_04.png" id="1_tw142"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwq55"]
+atlas = ExtResource("1_tw142")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppkjs"]
+atlas = ExtResource("1_tw142")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylpq6"]
+atlas = ExtResource("1_tw142")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w61nm"]
+atlas = ExtResource("1_tw142")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i1bog"]
+atlas = ExtResource("1_tw142")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51xqd"]
+atlas = ExtResource("1_tw142")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mf442"]
+atlas = ExtResource("1_tw142")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qletg"]
+atlas = ExtResource("1_tw142")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m8igx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qwq55")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppkjs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ylpq6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w61nm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i1bog")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_51xqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mf442")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qletg")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="WaterRocks" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_m8igx")
+animation = &"new_animation"
+autoplay = "new_animation"
